@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Step 1: 检出代码
-      - name: Checkout repository
+      - name: 检出代码
         uses: actions/checkout@v3
       # Step 2: 使用 Docker 生成新的文件
-      - name: Build and generate files with Docker
+      - name: 使用 Docker 生成新的文件
         run: |
           docker run --rm \
             -v ${{ github.workspace }}/notes:/srv/gitbook \
             fellah/gitbook:latest \
             gitbook build
       # Step 3: 配置生成的文件并推送到目标分支
-      - name: Deploy to web-html branch
+      - name: 配置生成的文件并推送到目标分支
         run: |
           # 设置用户信息
           git config user.name "${{ github.actor }}"
