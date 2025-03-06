@@ -1,0 +1,6 @@
+[book]
+authors = ["nxt5656"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "运维笔记"
