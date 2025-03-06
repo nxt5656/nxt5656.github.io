@@ -31,7 +31,7 @@ jobs:
           git reset --hard
 
           # 将生成的文件添加到分支
-          ls -alh
+          ls -alh ${{ github.workspace }}/notes
           cp -R ${{ github.workspace }}/notes/_book .
           git add .
 
