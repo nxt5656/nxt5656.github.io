@@ -18,13 +18,14 @@ jobs:
             -v ${{ github.workspace }}/notes:/srv/gitbook \
             fellah/gitbook:latest \
             gitbook init
+          ls -alh ${{ github.workspace }}/notes
       # Step 3: 配置生成的文件并推送到目标分支
       - name: Deploy to web-html branch
         run: |
           # 设置用户信息
           git config user.name "${{ github.actor }}"
           git config user.email "nxt5656@live.cn"
-
+          ls -alh
           # 初始化新的分支
           git switch --orphan web-html
           git reset --hard
