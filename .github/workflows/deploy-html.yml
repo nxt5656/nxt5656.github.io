@@ -31,7 +31,10 @@ jobs:
           git reset --hard
 
           # 将生成的文件添加到分支
+
           cp -R ${{ github.workspace }}/notes/_book/* .
+          rm -rf notes
+          rm -rf gitbook
           git add .
           # 提交更改
           git commit -m "Deploy generated files to web-html branch"
