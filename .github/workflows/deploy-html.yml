@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main # 监听 `main` 分支的推送事件（可根据实际分支调整）
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
