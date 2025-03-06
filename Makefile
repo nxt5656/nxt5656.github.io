@@ -1,12 +1,8 @@
-local:
-	bundle exec jekyll serve --host 0.0.0.0
-proxy:
-	export HTTP_PROXY=http://10.1.0.115:7890
-	export HTTPS_PROXY=http://10.1.0.115:7890
-unproxy:
-	unset http_proxy
-	unset https_proxy
-	unset ftp_proxy
-	unset no_proxy
-install: unproxy
-	bundle install
+serve:
+	docker stop gitbook 2>/dev/null || true
+	docker run --rm -d --name gitbook -p 4000:4000 -v $(CURDIR)/notes:/srv/gitbook fellah/gitbook:latest gitbook serve
+init:
+	docker run --rm -ti -v $(CURDIR)/notes:/srv/gitbook fellah/gitbook:latest gitbook init
+	sudo chown -R zhangbo:zhangbo ./notes/
+build:
+	docker run --rm -ti --user $(id -u):$(id -g) -v $(CURDIR)/notes:/srv/gitbook fellah/gitbook:latest gitbook build
