@@ -12,15 +12,17 @@ additional-css = ["./mdbook-admonish.css"]
 enable = true
 level = 1
 
-[preprocessor.katex]
-[preprocessor.toc]
 
-
+[preprocessor.tocjs]
+save_dir = "lib"
+theme_dir = "theme"
+block_marker_id = "tock"
+wing_marker_id = "tocw"
+base_url = "/"
 
 [preprocessor.admonish]
 command = "mdbook-admonish"
 assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
-[preprocessor.mermaid]
 
 
 

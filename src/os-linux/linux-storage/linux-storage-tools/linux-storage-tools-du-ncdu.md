@@ -1,4 +1,7 @@
 # Linux-常用存储相关命令工具-du/ncdu
+
+<div id="tocw"></div>
+
 ## 1 du
 du (Disk Usage)
 对指定的文件集合进行设备空间使用汇总，对目录递归处理。
