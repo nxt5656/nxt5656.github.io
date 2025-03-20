@@ -9,6 +9,8 @@
     - [Linux-网络](./os-linux/linux-network/README.md)
     - [Linux-安全](./os-linux/linux-security/README.md)
     - [Linux-存储](./os-linux/linux-storage/README.md)
+      - [Linux-常用存储相关命令工具](./os-linux/linux-storage/linux-storage-tools/README.md)
+        - [Linux-常用存储相关命令工具-du/ncdu](./os-linux/linux-storage/linux-storage-tools/linux-storage-tools-du-ncdu.md)
 ---
 # 开发相关
 - [代码管理](./code-management/README.md)
@@ -37,3 +39,7 @@
 - [AI-GPU相关](./ai-gpu/README.md)
   - [GPU-机器基础环境安装](./ai-gpu/gpu-host/README.md)
 - [AI-机器学习](./ai-machine-learning/README.md)
+- [图像视频相关](./image-video/README.md)
+  - [视频基础](./image-video/video-base/README.md)
+    - [ffmpeg](./image-video/video-base/ffmpeg.md)]
+

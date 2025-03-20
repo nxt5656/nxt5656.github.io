@@ -3,4 +3,10 @@ serve: build
 init:
 	mdbook init
 build:
+	mdbook-admonish install
 	mdbook build
+install:
+	cargo install mdbook-linkcheck  mdbook-katex
+	mdbook --version
+	mdbook-katex --version
+	mdbook-linkcheck --version

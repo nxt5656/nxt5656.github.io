@@ -1,7 +1,8 @@
 # Docker-基础
 
+更新时间: 2025-03-20
 ## 一. Docker 安装
-### 1.1 Linux安装
+### 1.1 Linux安装(ubuntu)
 
 ```shell
 # 更新软件源 并安装docker及docker-compose
@@ -11,7 +12,7 @@ sudo apt update && sudo  apt install -y docker.io docker-compose-v2
 # 添加当前用户到docker组,可以让非管理员用户可以使用docker命令,非必须
 sudo usermod -aG docker $USER
 
-# 生成docker配置文件,非必须
+# 生成docker配置文件,非必须,主要为了优化后续使用相关
 # data-root部分主要是为了将docker的数据目录移动到非默认目录,默认情况是/var/lib/docker,
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
