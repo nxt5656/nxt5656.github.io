@@ -14,9 +14,7 @@ level = 1
 
 [preprocessor.katex]
 [preprocessor.toc]
-max-level = 4
-command = "mdbook-toc"
-renderer = ["html"]
+
 
 
 [preprocessor.admonish]
