@@ -25,7 +25,4 @@ assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
 [preprocessor.mermaid]
 
 
-[output.linkcheck]
-follow-web-links = false
-
 
