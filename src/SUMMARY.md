@@ -35,8 +35,17 @@
 - [数据库-ElasticSearch](./database-elasticsearch/README.md)
   - [ElasticSearch-相关工具](./database-elasticsearch/elasticsearch-tools/README.md) 
     - [ElasticSearch-数据同步工具 elasticdump](./database-elasticsearch/elasticsearch-tools/elasticdump.md)
+  - [ElasticSearch-FAQ](./database-elasticsearch/faq/README.md)
+    - [ElasticSearch-FAQ-机器学习相关 ](./database-elasticsearch/faq/elasticsearch-faq-machine-learning.md)
+---
 # 网络
 - [网络-网络基础](./network-base/README.md)
+---
+# 安全相关
+- [证书相关](./certificate/README.md)
+  - [生成证书](./certificate/certificate-generate.md)
+  - [openssl.conf配置文件说明](./certificate/openssl.conf.md)
+---
 # AI相关
 - [AI-GPU相关](./ai-gpu/README.md)
   - [GPU-机器基础环境安装](./ai-gpu/gpu-host/README.md)
