@@ -1,9 +1,6 @@
-# 生成证书
+# 生成根证书
 
-
-## 签发根证书
-
-### 1. 创建OpenSSL配置文件
+## 1. 创建OpenSSL配置文件
 首先，创建一个OpenSSL配置文件，例如`openssl.cnf`。该文件可以包含如下内容：
 ```
 [ req ]  
@@ -53,14 +50,14 @@ basicConstraints: 指定该证书为 CA 证书（CA:true）。
 keyUsage: 限定证书的用途，比如 keyCertSign 和 cRLSign。
 ```
 
-### 2. 使用命令生成根证书
+## 2. 使用命令生成根证书
 ```shell
 # 使用命令生成根证书
 openssl req -x509 -new -nodes -keyout rootCA.key -sha256 -days 3650 -out rootCA.pem -config openssl.cnf
 #  验证生成的证书
 openssl x509 -in rootCA.pem -text -noout  
 ```
-####  说明
+###  说明
 ```
 rootCA.key 是生成的私钥文件
 rootCA.pem 是生成的根证书文件。

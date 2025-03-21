@@ -43,7 +43,7 @@
 ---
 # 安全相关
 - [证书相关](./certificate/README.md)
-  - [生成证书](./certificate/certificate-generate.md)
+  - [生成根证书](./certificate/certificate-root.md)
   - [openssl.conf配置文件说明](./certificate/openssl.conf.md)
 ---
 # AI相关
