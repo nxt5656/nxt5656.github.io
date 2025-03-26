@@ -38,3 +38,15 @@ curl http://127.0.0.1:11434/api/generate -d '{
   "stream": false
 }'
 ```
+
+## 通过 Open webui来使用ollama上的模型服务
+[open webui](https://github.com/open-webui/open-webui)
+
+```shell
+```
+# 同主机
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+# 不同主机
+docker run -d -p 3001:8080 -e OLLAMA_BASE_URL=http://ollama服务器:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
+```
