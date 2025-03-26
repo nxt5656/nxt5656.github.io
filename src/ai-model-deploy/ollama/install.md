@@ -26,6 +26,7 @@ docker run -d --gpus '"device=1"' -v ollama:/root/.ollama -p 11434:11434 --name 
 
 
 ## 拉取模型
+[模型列表](https://ollama.com/library)
 ```shell
 docker exec -ti ollama ollama pull deepseek-r1:32b
 ```
