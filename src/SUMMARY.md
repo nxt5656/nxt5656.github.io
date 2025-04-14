@@ -5,8 +5,11 @@
 # 操作系统
 - [操作系统-Linux](./os-linux/README.md)
     - [Linux-基础](./os-linux/linux-base/README.md)
-      - [Linux-时间相关](./os-linux/linux-base/linux-time/README.md)
+      - [Linux-时间相关](./os-linux/linux-base/linux-time.md)
+      - [Linux-内存](./os-linux/linux-base/linux-mem.md)
     - [Linux-网络](./os-linux/linux-network/README.md)
+      - [linux 代理软件squid](./os-linux/linux-network/linux-proxy-squid.md)
+      - [linux 配置代理](./os-linux/linux-network/linux-proxy.md)
     - [Linux-安全](./os-linux/linux-security/README.md)
     - [Linux-存储](./os-linux/linux-storage/README.md)
       - [Linux-常用存储相关命令工具](./os-linux/linux-storage/linux-storage-tools/README.md)
@@ -50,12 +53,19 @@
 # AI相关
 - [AI-GPU相关](./ai-gpu/README.md)
   - [GPU-机器基础环境安装](./ai-gpu/gpu-host/README.md)
-- [AI-机器学习](./ai-machine-learning/README.md)
+- [AI-基础知识](./ai-base/README.md)
+  - [模型相关](./ai-base/model.md)
 - [模型部署相关](./ai-model-deploy/README.md)
   - [ollama-基础](./ai-model-deploy/ollama/base.md)
   - [ollama-部署配置](./ai-model-deploy/ollama/install.md)
   - [huggingface-部署配置](./ai-model-deploy/huggingface/install.md)
+  - [comfyui](./ai-model-deploy/comfyui/install.md)
+    - [comfyui-常用插件](./ai-model-deploy/comfyui/plugins.md)
 - [图像视频相关](./image-video/README.md)
   - [视频基础](./image-video/video-base/README.md)
     - [ffmpeg](./image-video/video-base/ffmpeg.md)]
 
+
+---
+# 云厂商
+- [阿里云](./cloud-aliyun/README.md)
