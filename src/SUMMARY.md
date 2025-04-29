@@ -13,7 +13,8 @@
     - [Linux-安全](./os-linux/linux-security/README.md)
     - [Linux-存储](./os-linux/linux-storage/README.md)
       - [Linux-常用存储相关命令工具](./os-linux/linux-storage/linux-storage-tools/README.md)
-        - [Linux-常用存储相关命令工具-du/ncdu](./os-linux/linux-storage/linux-storage-tools/linux-storage-tools-du-ncdu.md)
+        - [Linux-常用存储相关命令工具-du/ncdu](./os-linux/linux-storage/linux-storage-tools-du-ncdu.md)
+        - [Linux-存储性能测试-fio](./os-linux/linux-storage/fio.md)
 ---
 # 开发相关
 - [代码管理](./code-management/README.md)
