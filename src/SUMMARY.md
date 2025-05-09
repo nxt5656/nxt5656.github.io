@@ -22,6 +22,7 @@
   - [代码仓库-github](./code-management/code-management-github/README.md)
   - [代码仓库-gitlab](./code-management/code-management-gitlab/README.md)
 - [编程语言-Python](./program-language-python/README.md)
+  - [编程语言-Python-miniconda](./program-language-python/program-language-python-miniconda.md)
 - [编程语言-Golang](./program-language-go/README.md)
 # 虚拟化相关
 - [虚拟化-KVM](./virtualization-kvm/README.md)
