@@ -13,7 +13,7 @@ sudo apt install -y nfs-kernel-server
 mkdir /data/nfs
 # 配置exports
 sudo tee /etc/exports <<-'EOF'
-/data/nfs *(ro,sync,no_subtree_check)
+/data/nfs *(rw,sync,no_subtree_check)
 EOF
 #配置生效,启动服务
 sudo exportfs -a

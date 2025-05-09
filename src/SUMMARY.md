@@ -35,6 +35,7 @@
 - [虚拟化-Kubernetes](./virtualization-kubernetes/README.md)
 # 数据库
 - [数据库-MySQL](./database-mysql/README.md)
+  - [MySQL-常用操作](./database-mysql/common-operations.md)
 - [数据库-Redis](./database-redis/README.md)
 - [数据库-MongoDB](./database-mongodb/README.md)
 - [数据库-ElasticSearch](./database-elasticsearch/README.md)
