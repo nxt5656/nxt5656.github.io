@@ -40,6 +40,19 @@ WHERE
     TABLE_SCHEMA = 'your_database_name'  -- 替换为数据库名
     AND TABLE_NAME = 'your_table_name';  -- 替换为表名
 ```
+
+4. 查看每个库的大小
+```mysql
+SELECT
+    table_schema AS `数据库名`,
+    ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS `大小(MB)`
+FROM
+    information_schema.TABLES
+GROUP BY
+    table_schema
+ORDER BY
+    SUM(data_length + index_length) DESC;
+```
 #### 关键字段解释:
 1. DATA_LENGTH：表数据占用的字节数。
 1. INDEX_LENGTH：索引占用的字节数。

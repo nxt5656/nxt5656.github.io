@@ -11,6 +11,8 @@ sudo apt install -y nfs-kernel-server
 ``` 
 # 创建nfs目录
 mkdir /data/nfs
+chown nobody:nogroup  /data/nfs/
+chmod 777 /data/nfs
 # 配置exports
 sudo tee /etc/exports <<-'EOF'
 /data/nfs *(rw,sync,no_subtree_check)
