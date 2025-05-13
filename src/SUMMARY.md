@@ -68,7 +68,7 @@
 - [图像视频相关](./image-video/README.md)
   - [视频基础](./image-video/video-base/README.md)
     - [ffmpeg](./image-video/video-base/ffmpeg.md)]
-
+- [AIGC-中国大陆法律法规](./ai-gfw/README.md)
 
 ---
 # 云厂商
