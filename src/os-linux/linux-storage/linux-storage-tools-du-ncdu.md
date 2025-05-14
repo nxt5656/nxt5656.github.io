@@ -67,25 +67,61 @@ SIZE 参数是一个整数，可以带有可选单位（例如：10K 表示 10*1
 ### 2.1 安装
 ```shell
 apt install -y ncdu
+# 或
+wget "https://dev.yorhel.nl/download/ncdu-2.8.1-linux-x86_64.tar.gz"
+tar -zxvf ncdu-2.8.1-linux-x86_64.tar.gz
+cp ncdu /usr/bin/
 ```
 ### 2.2 使用说明
 ```shell
-ncdu <选项> <目录>  
-  -h, --help                  显示此帮助信息  
-  -q                          静默模式，刷新间隔为 2 秒  
-  -v, -V, --version           打印版本信息  
-  -x                          限制扫描在同一文件系统内  
-  -e                          启用扩展信息显示  
-  -r                          只读模式  
-  -o 文件                     将扫描的目录导出到指定文件  
-  -f 文件                     从指定文件导入已扫描的目录数据  
-  -0, -1, -2                  扫描时使用的用户界面 (0=无界面, 2=完整 ncurses 界面)  
-  --si                        使用十进制 (SI) 前缀代替二进制前缀  
-  --exclude 模式              排除匹配指定模式的文件  
-  -X, --exclude-from 文件     排除匹配文件中任意模式的文件  
-  -L, --follow-symlinks       跟随符号链接（不包括目录）  
-  --exclude-caches            排除包含 CACHEDIR.TAG 的目录  
-  --exclude-kernfs            排除 Linux 的伪文件系统（如 procfs, sysfs, cgroup 等）  
-  --confirm-quit              退出 ncdu 时需要确认  
-  --color 配置                设置配色方案（off/dark/dark-bg）  
+ncdu <选项> <目录>
+
+模式选择:
+-h, --help             显示此帮助信息
+-v, -V, --version        打印版本号
+-f 文件                  从文件中导入扫描的目录结构
+-o 文件                  将扫描的目录结构导出为 JSON 格式文件
+-O 文件                  将扫描的目录结构导出为二进制格式文件
+-e, --extended           启用扩展信息
+--ignore-config        不加载配置文件
+
+扫描选项:
+-x, --one-file-system    只扫描当前文件系统
+--exclude 模式           排除符合指定模式的文件
+-X, --exclude-from 文件    排除符合文件中任意模式的文件
+--exclude-caches         排除包含 CACHEDIR.TAG 文件的目录
+-L, --follow-symlinks    跟随符号链接（排除目录符号链接）
+--exclude-kernfs         排除 Linux 伪文件系统（procfs, sysfs, cgroup, ...）
+-t 数量                  使用指定数量的线程进行扫描
+
+导出选项:
+-c, --compress           与 -o 一起使用时，使用 Zstandard 压缩
+--compress-level 数量    设置压缩级别
+--export-block-size KiB  与 -O 一起使用时，设置导出块大小（单位 KiB）
+
+界面选项:
+-0, -1, -2               扫描时使用的 UI 模式 (0=无界面, 2=完整 ncurses 界面)
+-q, --slow-ui-updates    "安静"模式，刷新间隔 2 秒
+--enable-shell           启用/禁用启动 shell 的功能
+--enable-delete          启用/禁用文件删除功能
+--enable-refresh         启用/禁用目录刷新功能
+-r                       只读模式 (--disable-delete)
+-rr                      只读模式++ (--disable-delete & --disable-shell)
+--si                     使用十进制 (SI) 前缀（如 MB, GB）而不是二进制前缀（如 MiB, GiB）
+--apparent-size          默认显示文件实际大小而不是占用的磁盘空间
+--hide-hidden            默认隐藏“隐藏”文件或被排除的文件
+--show-itemcount         默认显示项目计数列
+--show-mtime             默认显示修改时间列（需要 -e 选项）
+--show-graph             默认显示图表列
+--show-percent           默认显示百分比列
+--graph-style 样式       图表样式：hash / half-block / eighth-block
+--shared-column          共享列显示：off / shared / unique
+--sort 列-(asc/desc)     排序方式：disk-usage（磁盘使用量）/ name（名称）/ apparent-size（实际大小）/ itemcount（项目计数）/ mtime（修改时间），可指定 asc（升序）/ desc（降序）
+--enable-natsort         按名称排序时使用自然排序（例如 1, 2, 10 而不是 1, 10, 2）
+--group-directories-first 将目录排在文件前面
+--confirm-quit           退出 ncdu 前询问确认
+--no-confirm-delete      删除前不询问确认
+--color 配色方案         配色方案：off（关闭）/ dark（深色）/ dark-bg（深色背景）
+
+请参考 man ncdu 获取更多信息。
 ```
