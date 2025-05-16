@@ -1,6 +1,11 @@
 # linux SoftEtherVPN server
 容器方式安装
+
 ``` 
+mkdir openvpn
+docker run -d -name openvpn-base nxt5656/ubuntu:SoftEtherVPN-openvpn
+docker cp openvpn-base:/app/vpn_server.config openvpn/vpn_server.config
+docker stop openvpn-base && docker rm openvpn-base
 docker run \
     --restart=always \
     --name openvpn \
