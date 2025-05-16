@@ -10,6 +10,7 @@
     - [Linux-网络](./os-linux/linux-network/README.md)
       - [linux 代理软件squid](./os-linux/linux-network/linux-proxy-squid.md)
       - [linux 配置代理](./os-linux/linux-network/linux-proxy.md)
+      - [linux SoftEtherVPN server](./os-linux/linux-network/linux-softethervpn-server.md)
     - [Linux-安全](./os-linux/linux-security/README.md)
     - [Linux-存储](./os-linux/linux-storage/README.md)
       - [Linux-搭建nfs服务](./os-linux/linux-storage/nfs.md)
