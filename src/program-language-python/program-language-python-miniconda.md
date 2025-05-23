@@ -6,9 +6,12 @@ mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
-
-echo "export PATH=~/miniconda3/bin:$PATH" >>  ~/.bashrc
+conda init
 source ~/.bashrc
+
+# 手动修改bashrc,默认不需要
+#echo "export PATH=~/miniconda3/bin:$PATH" >>  ~/.bashrc
+#source ~/.bashrc
 ```
 
 ## conda的简单操作
