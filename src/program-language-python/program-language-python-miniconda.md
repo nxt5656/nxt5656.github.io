@@ -19,6 +19,10 @@ conda --version
 conda update conda
 # 创建新环境
 conda create --name <环境名称> python=<版本号>
+# 查看所有可用的 Python 版本
+conda search python
+# 查看当前环境中已安装的 Python 版本：
+conda list python
 # 激活环境
 conda activate <环境名称>
 # 退出环境
