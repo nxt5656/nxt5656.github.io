@@ -16,7 +16,7 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 ## node/npm 多版本的安装与使用
 ```shell
 # 列出可安装的所有版本(linux&mac)
-nvm ls ls-remote
+nvm ls-remote
 
 # 列出可安装的所有版本(windows)
 nvm available
