@@ -25,6 +25,8 @@
 - [编程语言-Python](./program-language-python/README.md)
   - [编程语言-Python-miniconda](./program-language-python/program-language-python-miniconda.md)
 - [编程语言-Golang](./program-language-go/README.md)
+- [NodeJS](./program-nodejs/README.md)
+  - [nodejs 版本管理工具nvm](./program-nodejs/nvm.md)
 # 虚拟化相关
 - [虚拟化-KVM](./virtualization-kvm/README.md)
 - [虚拟化-容器](./virtualization-container/README.md)
