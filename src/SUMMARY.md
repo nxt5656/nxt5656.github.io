@@ -16,6 +16,7 @@
       - [Linux-搭建nfs服务](./os-linux/linux-storage/nfs.md)
       - [Linux-常用存储相关命令工具-du/ncdu](./os-linux/linux-storage/linux-storage-tools-du-ncdu.md)
       - [Linux-存储性能测试-fio](./os-linux/linux-storage/fio.md)
+      - [Linux-使用Docker + filebrowser 搭建文件管理服务](./os-linux/linux-storage/docker-file-server.md)
 ---
 # 开发相关
 - [代码管理](./code-management/README.md)
