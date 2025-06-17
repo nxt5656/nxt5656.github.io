@@ -33,6 +33,7 @@
 - [虚拟化-容器](./virtualization-container/README.md)
   - [容器-Docker](./virtualization-container/virtualization-docker/README.md)
     - [Docker-基础](./virtualization-container/virtualization-docker/docker-base.md)
+    - [Docker-镜像加速](./virtualization-container/virtualization-docker/docker-mirror.md)
     - [nvida docker](./virtualization-container/virtualization-docker/nvidia-docker.md)
     - [Docker-无根模式](./virtualization-container/virtualization-docker/docker-rootless-mode/README.md)
     - [Docker-构建镜像](./virtualization-container/virtualization-docker/docker-build/README.md)
