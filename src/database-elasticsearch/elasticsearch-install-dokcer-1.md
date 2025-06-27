@@ -100,6 +100,7 @@ es密码后面生成后要修改
 server.name: kibana
 server.host: "0.0.0.0"
 xpack.monitoring.ui.container.elasticesearch.enabled: true
+xpack.encryptedSavedObjects.encryptionKey: "1234567890abcdef1234567890abcdef"
 i18n.locale: "zh-CN"
 monitoring.ui.container.elasticsearch.enabled: true
 elasticsearch.username: "kibana"
