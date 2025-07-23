@@ -18,6 +18,7 @@
       - [Linux-存储性能测试-fio](./os-linux/linux-storage/fio.md)
       - [Linux-使用Docker + filebrowser 搭建文件管理服务](./os-linux/linux-storage/docker-file-server.md)
       - [linux-系统预读功能](./os-linux/linux-storage/linux-pre-read.md)
+      - [raid 配置](./os-linux/linux-storage/raid.md)
 ---
 # 开发相关
 - [代码管理](./code-management/README.md)
