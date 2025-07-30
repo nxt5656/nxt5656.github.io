@@ -32,3 +32,14 @@ apt -y install sysstat
 sar -r 1  
 
 ```
+
+
+
+## 内存相关操作
+```
+# 清理内存
+# 同步,将内存中数据写入磁盘
+sync
+# 清理缓存
+echo 1 > /proc/sys/vm/drop_caches
+```
