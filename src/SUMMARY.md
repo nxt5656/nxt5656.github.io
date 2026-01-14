@@ -43,6 +43,7 @@
     - [nvida docker](./virtualization-container/virtualization-docker/nvidia-docker.md)
     - [Docker-无根模式](./virtualization-container/virtualization-docker/docker-rootless-mode/README.md)
     - [Docker-构建镜像](./virtualization-container/virtualization-docker/docker-build/README.md)
+    - [容器管理工具-portainer](./virtualization-container/virtualization-docker/portainer.md)
   - [容器-Podman](./virtualization-container/virtualization-podman/README.md)
 - [虚拟化-Kubernetes](./virtualization-kubernetes/README.md)
 # 数据库
@@ -82,7 +83,10 @@
   - [常见图像格式](./image-video/image-format.md)
   - [ffmpeg](./image-video/ffmpeg.md)]
 - [AIGC-中国大陆法律法规](./ai-gfw/README.md)
-
+---
+# 运维工具
+- [主机操作](./devops-tools/host.md)
+  - [web shell](./devops-tools/host-web_shell.md)
 ---
 # 云厂商
 - [阿里云](./cloud-aliyun/README.md)
